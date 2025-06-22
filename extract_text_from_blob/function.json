@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "blob_name",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "pdfqueue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "$return",
+      "type": "queue",
+      "queueName": "summaryqueue",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}

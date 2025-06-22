@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "summary",
+      "type": "queueTrigger",
+      "queueName": "uploadqueue",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    }
+  ]
+}
